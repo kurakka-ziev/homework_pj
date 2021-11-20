@@ -1,0 +1,56 @@
+table.table-bordered{
+    border:2px solid #D1B5F2;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:2px solid #D1B5F2;
+}
+table.table-bordered > tbody > tr > td{
+    border:2px solid #D1B5F2;
+}
+
+.btn-purple {
+	background-color: #D1B5F2;
+}
+
+.btn-purple:hover {
+	background-color: #EBD9FF;
+}
+
+.btn-purple2 {
+    background-color: #879AE0;
+}
+
+.btn-purple2:hover {
+    background-color: #9299FA;
+}
+
+.homework-text {
+    font-size: 22px;
+}
+
+.homework-bold {
+    font-weight: 600;
+}
+
+.lead {
+    font-size: 13;
+}
+
+.table-link {
+    text-decoration:none;
+    color: #614680;
+    text-transform: lowercase;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.lowercase {
+     text-transform: lowercase;
+     line-height: 3em;
+     font-weight: 600;
+}
+
+.alert-custom {
+    background-color: #B0B2AA;
+}

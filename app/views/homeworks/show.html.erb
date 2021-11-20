@@ -1,0 +1,14 @@
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @homework.subject %></h1>
+
+  <p class="lead"> <b>date to do:</b> <%= @homework.date_to_do %> <br/>
+  <b>difficulty:</b> <%= @homework.difficulty %> </p>
+  <hr class="my-3">
+  <p class="homework-text"> <span class="homework-bold">homework:</span> <%= @homework.text %></p>
+</div>
+
+<br/><br/>
+
+<%= link_to 'Edit', edit_homework_path(@homework), class:"btn btn-purple" %>
+<%= link_to 'Back', homeworks_path, class:"btn btn-secondary" %>

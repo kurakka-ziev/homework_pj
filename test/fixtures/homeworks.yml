@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyString
+  date_to_do: 2021-09-04
+  text: MyString
+  difficulty: 1
+
+two:
+  subject: MyString
+  date_to_do: 2021-09-04
+  text: MyString
+  difficulty: 1

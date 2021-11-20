@@ -1,0 +1,31 @@
+<h1 class="centered-top">homework list</h1>
+
+<table class="table table-hover table-bordered border border-2 border-secondary table-responsive" >
+  <thead>
+    <tr bgcolor="#D1B5F2">
+      <th>Subject</th>
+      <th>Date to do</th>
+      <th>Text</th>
+      <th>Difficulty</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @homeworks.each do |homework| %>
+      <tr>
+        <td><%= homework.subject %></td>
+        <td><%= homework.date_to_do %></td>
+        <td><%= homework.text %></td>
+        <td><%= homework.difficulty %></td>
+        <td><%= link_to 'Show', homework, class:"table-link" %></td>
+        <td><%= link_to 'Edit', edit_homework_path(homework), class:"table-link" %></td>
+        <td><%= link_to 'Destroy', homework, method: :delete, data: { confirm: 'Are you sure?' }, class:"table-link" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Homework', new_homework_path, class:'btn btn-purple' %>
